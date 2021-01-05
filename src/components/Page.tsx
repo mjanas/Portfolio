@@ -5,9 +5,10 @@ import { NavigationBar } from './NavigationBar';
 
 export const SectionPage = styled.body`
     width: 100%;
-    height: 100%;
-    background-color: ${props => props.theme.colors.darkGrey};
-    color: ${props => props.theme.colors.white};
+    height: 100%; // 100vh
+    min-height: 100%; // 100vh
+    // background-color: ${props => props.theme.colors.darkGrey};
+    // color: ${props => props.theme.colors.white};
 `;
 
 interface IProps {

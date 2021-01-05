@@ -14,6 +14,6 @@ const FooterStyled = styled.footer`
 
 export const Footer = () => {
     return (
-        <FooterStyled>Copyright © 2020 Monika Janas</FooterStyled>
+        <FooterStyled>Copyright © 2021 Monika Janas</FooterStyled>
     );
 };

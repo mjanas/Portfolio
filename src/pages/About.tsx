@@ -1,15 +1,19 @@
 import React from 'react';
-import { NavigationBar } from '../components/NavigationBar';
-import { Footer } from '../components/Footer';
+import ReactMarkdown from 'react-markdown';
+import { Page } from '../components/Page';
+import { useMarkdown } from '../components/use-markdown';
+import about from "../content/About.md";
 
 export const About = () => {
+    const { markdown } = useMarkdown(about);
+
     return (
-        <React.Fragment>
-            <NavigationBar />
+        <Page>
             <div>
-                <h1> About page </h1>
+                <ReactMarkdown>{markdown}</ReactMarkdown>
             </div>
-            <Footer />
-        </React.Fragment>
+            <div>
+            </div>
+        </Page>
     );
 };
