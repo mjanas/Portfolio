@@ -2,7 +2,6 @@ import React from "react";
 import styled from 'styled-components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Home } from '../pages/Home';
-import { About } from '../pages/About';
 import { Projects } from '../pages/Projects';
 import { Blog } from '../pages/Blog';
 
@@ -15,9 +14,6 @@ export const Header = () => {
         <HeaderStyled>
             <Router>
               <Switch>
-                  <Route path="/about">
-                    <About />
-                  </Route>
                   <Route path="/projects">
                     <Projects />
                   </Route>

@@ -1,13 +1,10 @@
 import React from 'react';
-import { NavigationBar } from '../components/NavigationBar';
+import { Page } from '../components/Page';
 
 export const Projects = () => {
     return (
-        <React.Fragment>
-            <NavigationBar />
-            <div>
-                <h1> Projects page </h1>
-            </div>
-        </React.Fragment>
+        <Page>
+            <div> Projects page currently under construction </div>
+        </Page>
     );
 };
