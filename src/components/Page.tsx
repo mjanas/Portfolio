@@ -4,11 +4,14 @@ import { Footer } from './Footer';
 import { NavigationBar } from './NavigationBar';
 
 export const SectionPage = styled.body`
-    width: 100%;
-    height: 100%; // 100vh
-    min-height: 100%; // 100vh
-    // background-color: ${props => props.theme.colors.darkGrey};
-    // color: ${props => props.theme.colors.white};
+    min-height: 100vh;
+    background-color: ${props => props.theme.colors.darkGrey};
+    color: ${props => props.theme.colors.white};
+    padding: 20px 20px 20px 20px;
+
+    h1 {
+        margin-top: 0;
+    }
 `;
 
 interface IProps {
