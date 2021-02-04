@@ -4,22 +4,11 @@ import styled from 'styled-components';
 
 const NavigationStyled = styled.nav`
     display: flex;
-    flex-flow column wrap;
+    flex-flow: row wrap;
     justify-content: flex-start;
+    background-color: ${props => props.theme.colors.grey};
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: ${props => props.theme.colors.grey};
-    }
-    
-    li {
-        float: left;
-    }
-    
-    li a {
+    a {
         display: block;
         color: ${props => props.theme.colors.white};
         text-align: center;
@@ -27,7 +16,7 @@ const NavigationStyled = styled.nav`
         text-decoration: none;
     }
     
-    li a:hover {
+    a:hover {
         background-color: ${props => props.theme.colors.lightGrey};
     }
 `;
@@ -35,17 +24,9 @@ const NavigationStyled = styled.nav`
 export const NavigationBar = () => {
     return (
         <NavigationStyled>
-            <ul>
-                <li>
-                    <NavLink exact to="/">Monika Janas</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/projects">Projects</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/blog">Blog</NavLink>
-                </li>
-            </ul>
+            <NavLink exact to="/">Monika Janas</NavLink>
+            <NavLink to="/projects">Projects</NavLink>
+            <NavLink to="/blog">Blog</NavLink>
         </NavigationStyled>
     );
 };

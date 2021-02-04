@@ -1,20 +1,33 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const CardStyled = styled.div`
-    padding: 25px 12px 18px;
+const CardStyled = styled.div<ISkillCardProps>`
+    padding: 10px 10px 10px 10px;
     border: 1px solid black;
+    width: 4rem;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("${(props) => props.imageUrl}");
+    background-position: center;
 `;
 
 interface ISkillCardProps {
     title: string;
+    imageUrl: string;
 }
 
 export const SkillCard = (props: ISkillCardProps) => {
 
     return (
-        <CardStyled>
-            <h4>{props.title}</h4>
-        </CardStyled>
+        <>
+            <CardStyled
+                title={props.title}
+                imageUrl={props.imageUrl}
+            />
+        </>
     );
 };

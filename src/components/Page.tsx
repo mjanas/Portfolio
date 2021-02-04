@@ -7,7 +7,7 @@ export const SectionPage = styled.body`
     min-height: 100vh;
     background-color: ${props => props.theme.colors.darkGrey};
     color: ${props => props.theme.colors.white};
-    padding: 5px 0px 0px 0px;
+    padding: 20px 20px 20px 20px;
 
     h1 {
         margin-top: 0;

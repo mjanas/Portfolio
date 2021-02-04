@@ -5,6 +5,13 @@ import { useMarkdown } from '../components/use-markdown';
 import home from "../content/Home.md";
 import about from "../content/About.md";
 import { SkillCard } from '../components/SkillCard';
+import styled from 'styled-components';
+
+const Skills = styled.div`
+    display: flex;
+    flex-wrap: row wrap;
+`;
+
 
 export const Home = () => {
 
@@ -15,7 +22,11 @@ export const Home = () => {
         <Page>
             {/* <ReactMarkdown>{homeMarkdown}</ReactMarkdown> */}
             <ReactMarkdown>{aboutMarkdown}</ReactMarkdown>
-            <SkillCard title={"Hello"}/>
+            <Skills>
+                <SkillCard title={"Hello"} imageUrl={"/static/react_logo.png"}/>
+                <SkillCard title={"World"} imageUrl={"/static/csharp_logo.png"} />
+                <SkillCard title={"World"} imageUrl={"/static/cpp_logo.png"} />
+            </Skills>
         </Page>
     );
 };
