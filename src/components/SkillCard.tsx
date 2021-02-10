@@ -20,7 +20,7 @@ interface ISkillCardProps {
     imageUrl: string;
 }
 
-export const SkillCard = (props: ISkillCardProps) => {
+export const SkillCard = (props: ISkillCardProps): JSX.Element => {
 
     return (
         <>
