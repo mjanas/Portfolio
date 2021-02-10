@@ -12,7 +12,7 @@ const FooterStyled = styled.footer`
     padding: 10px 0 10px 0;
 `;
 
-export const Footer = () => {
+export const Footer = (): JSX.Element => {
     return (
         <FooterStyled>Copyright © 2021 Monika Janas</FooterStyled>
     );

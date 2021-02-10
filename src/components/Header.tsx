@@ -5,11 +5,11 @@ import { Home } from '../pages/Home';
 import { Projects } from '../pages/Projects';
 import { Blog } from '../pages/Blog';
 
-const HeaderStyled = styled.header`    
+const HeaderStyled = styled.div`    
     width: 100%;
 `;
 
-export const Header = () => {
+export const Header = (): JSX.Element => {
     return (
         <HeaderStyled>
             <Router>

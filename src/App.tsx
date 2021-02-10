@@ -3,7 +3,7 @@ import './App.css';
 import { Header } from "./components/Header";
 import Theme from "./Theme";
 
-function App() {
+function App(): JSX.Element {
   return (
     <React.Fragment>
       <Theme>

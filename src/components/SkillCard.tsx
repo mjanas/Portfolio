@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const CardStyled = styled.div<ISkillCardProps>`
     padding: 10px 10px 10px 10px;
-    border: 1px solid black;
     width: 4rem;
     height: 4rem;
     justify-content: center;
@@ -13,6 +12,11 @@ const CardStyled = styled.div<ISkillCardProps>`
     background-repeat: no-repeat;
     background-image: url("${(props) => props.imageUrl}");
     background-position: center;
+    transition: transform ease 200ms;
+
+    :hover {
+        transform: scale(1.05);
+    }
 `;
 
 interface ISkillCardProps {
@@ -20,7 +24,7 @@ interface ISkillCardProps {
     imageUrl: string;
 }
 
-export const SkillCard = (props: ISkillCardProps) => {
+export const SkillCard = (props: ISkillCardProps): JSX.Element => {
 
     return (
         <>

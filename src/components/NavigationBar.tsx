@@ -21,7 +21,7 @@ const NavigationStyled = styled.nav`
     }
 `;
 
-export const NavigationBar = () => {
+export const NavigationBar = (): JSX.Element => {
     return (
         <NavigationStyled>
             <NavLink exact to="/">Monika Janas</NavLink>
