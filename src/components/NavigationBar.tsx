@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
 const NavigationStyled = styled.nav`
@@ -21,7 +21,7 @@ const NavigationStyled = styled.nav`
     }
 `;
 
-export const NavigationBar = () => {
+export const NavigationBar: FunctionComponent = () => {
     return (
         <NavigationStyled>
             <NavLink exact to="/">Monika Janas</NavLink>

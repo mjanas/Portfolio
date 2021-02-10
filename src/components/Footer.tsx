@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
 const FooterStyled = styled.footer`    
@@ -12,7 +12,7 @@ const FooterStyled = styled.footer`
     padding: 10px 0 10px 0;
 `;
 
-export const Footer = () => {
+export const Footer: FunctionComponent = () => {
     return (
         <FooterStyled>Copyright © 2021 Monika Janas</FooterStyled>
     );

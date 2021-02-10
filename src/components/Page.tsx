@@ -18,7 +18,7 @@ interface IProps {
     children: React.ReactNode;
 }
 
-export const Page = ({ children }: IProps) => {
+export const Page = ({ children }: IProps): JSX.Element => {
     return (
         <React.Fragment>
             <NavigationBar />
