@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
 const NavigationStyled = styled.nav`
@@ -24,7 +24,7 @@ const NavigationStyled = styled.nav`
 export const NavigationBar = (): JSX.Element => {
     return (
         <NavigationStyled>
-            <NavLink exact to="/">Monika Janas</NavLink>
+            <NavLink exact to="/">MJ</NavLink>
             <NavLink to="/projects">Projects</NavLink>
             <NavLink to="/blog">Blog</NavLink>
         </NavigationStyled>
