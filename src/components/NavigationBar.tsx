@@ -24,7 +24,7 @@ const NavigationStyled = styled.nav`
 export const NavigationBar: FunctionComponent = () => {
     return (
         <NavigationStyled>
-            <NavLink exact to="/">Monika Janas</NavLink>
+            <NavLink exact to="/">MJ</NavLink>
             <NavLink to="/projects">Projects</NavLink>
             <NavLink to="/blog">Blog</NavLink>
         </NavigationStyled>
